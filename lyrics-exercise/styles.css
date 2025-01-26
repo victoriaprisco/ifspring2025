@@ -1,0 +1,47 @@
+.stanza {
+    padding: 10px;
+    margin: 10px;
+    font-size: 24px;
+    font-family: 'Verdana';
+}
+
+header {
+    text-align: center;
+    font-family: 'Monaco', monospace;
+}
+#song-name {
+    font-size: 58px;
+    color: #d5ae5b;
+    padding-top: 20px;
+    margin-bottom: 0px;
+}
+#band {
+    font-size: 36px;
+    color: #7c826b;
+    line-height: 0;
+}
+body {
+    background-color: #354046;
+    background-image: linear-gradient(#354046, #4b5e58, #7c826b); /*  https://www.w3schools.com/css/css3_gradients.asp */
+    color: white;
+    overscroll-behavior: none; /* https://developer.mozilla.org/en-US/docs/Web/CSS/overscroll-behavior */
+
+}
+
+footer {
+    background-color: #7c826b;
+    height: auto;
+}
+
+#on {
+    text-align: center;
+    display: block;
+    width: 100%;
+}
+
+#back {
+    display: block;
+    width: 100%;
+    text-align: right;
+    color:rgb(252, 219, 148);
+}
