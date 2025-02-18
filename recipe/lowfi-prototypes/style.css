@@ -1,0 +1,16 @@
+#ptype {
+    display: flex;
+}
+
+#ptype > div {
+    display: flex;
+    flex-direction: column;
+    width: 25%;
+    border: solid;
+    margin: 5px;
+    padding: 5px;
+}
+
+img {
+    width: 100%;
+}
