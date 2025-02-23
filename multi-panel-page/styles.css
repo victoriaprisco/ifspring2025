@@ -1,0 +1,159 @@
+@import url('https://fonts.googleapis.com/css2?family=Archivo+Narrow:ital,wght@0,400..700;1,400..700&family=Raleway:ital,wght@0,100..900;1,100..900&family=Roboto+Condensed:ital,wght@0,700;1,700&display=swap');
+* {
+    font-family: "Archivo Narrow", serif;
+  font-optical-sizing: auto;
+  /* font-weight: <weight>; */
+  font-style: normal;
+}
+#heading h1 {
+    padding-top: 11px;
+    margin: 0px;
+    font-size: 82px;
+    line-height: 1.25;
+    letter-spacing: -0.01em;
+    /* color: rgba(0,0,0,0.5); */
+}
+
+#heading h2 {
+    font-size: 30px;
+    margin: 0px;
+    /* padding-top: 0px; */
+    /* padding-bottom: 40px; */
+}
+
+section h1 {
+    text-align: center;
+    font-size: 40px;
+    margin-top: 0;
+    margin-bottom: 32px;
+    
+}
+#sect1 p {
+    padding: 0 233px;
+    font-size: 17.1px;
+    line-height: 1.488;
+    margin-bottom: 15px;
+    margin-top: -1px;
+    letter-spacing: 0.02em;
+}
+
+#sect1 div {
+    padding-top: 31px;
+    padding-bottom: 36px;
+    /* border:solid; */
+    background-color: gray;
+}
+
+#sect2 h1 {
+    margin-bottom: 26px;
+    margin-top: 4px;
+}
+
+#sect2 > div {
+    padding-top: 40px;
+    padding-bottom: 50px;
+    background-color: white;
+}
+
+#sect1 img {
+    float: right;
+    width: 400px;
+    height: 300px;
+    margin-right: 232px;
+    margin-left: 35px;
+    object-fit: cover;
+    border: solid;
+    margin-bottom: 20px;
+}
+header {
+    display: flex;
+    flex-direction: column;
+    align-items: middle;
+    height: 440px;
+    justify-content: center;
+    vertical-align: middle;
+    text-align: center;
+    margin: 0;
+    background-image: url("media/bg_img.jpg");
+    background-size: 200px, auto, contain;
+    /* opacity: 50%; */
+    padding-bottom: 50px;
+}
+
+#really {
+    font-style: italic;
+}
+
+.photo-item img {
+    width: 200px;
+    height: 150px;
+    margin-right: 12px;
+    margin-top: 6px;
+    margin-bottom: 18px;
+}
+
+h3 {
+    font-size: 20px;
+    margin-top: 7px;
+    margin-bottom: 6px;
+}
+
+#sect2 {
+    padding: 0 233px;
+    height: fit-content;
+}
+
+
+.photo-item {
+    display: flex;
+    width: 45%;
+    padding-right: 48px;
+}
+
+.photo-desc {
+    width: 500px;
+    display: flex;
+    flex-direction: column;
+}
+
+.photo-desc p {
+    font-size: 18px;
+    line-height: 1.4;
+    margin-top:0;
+    margin-bottom: 10px;
+}
+
+.photo-row {
+    display: flex;
+}
+
+#sect3 {
+    height:fit-content;
+}
+
+#sect3 > div {
+    padding-top: 38px;
+    padding-bottom: 100px;
+    background-color: aqua;
+
+}
+#sect3  p {
+    text-align: center;
+    margin: 0 359px;
+    font-size: 26px;
+    line-height: 1.38;
+}
+
+#sect4 {
+    background-color: red;
+    height: fit-content;
+}
+
+#sect4 h3 {
+    font-weight: 100;
+    font-size: 18px;
+    padding-left: 233px;
+    padding-top: 43px;
+    padding-bottom: 49px;
+    margin: 0;
+}
