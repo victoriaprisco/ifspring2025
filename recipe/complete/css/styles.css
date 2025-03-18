@@ -1,0 +1,215 @@
+@font-face {
+    font-family: Basteleur;
+    src: url("fonts/basteleur-master/fonts/ttf/Basteleur-Bold.ttf");
+}
+
+@font-face {
+    font-family: Degheest;
+    src: url("fonts/degheest-types-master/fonts/ttf/Director-Light.ttf");
+}
+@font-face {
+    font-family: DegheestBold;
+    src: url("fonts/degheest-types-master/fonts/ttf/Director-bold.ttf");
+}
+
+html {
+    background-color: var(--bg);
+    font-family: Degheest;
+    letter-spacing: -.1px;
+}
+
+:root {
+    --blue: #1D2F6F;
+    --yellow: #FAC748;
+    --bg: #F9E9EC;
+}
+
+h1 {
+    font-family: Basteleur;
+    font-size: 6em;
+    color: var(--blue);
+    margin-left: 30px;
+    margin-bottom: 0;
+    margin-top: 20px;
+}
+
+#top {
+    display: flex;
+    align-items: center;
+}
+
+#info {
+    background-color: var(--yellow);
+    width: 35%;
+    height: 5em;
+    padding: 20px;
+    vertical-align: middle;
+}
+body {
+    /* position: fixed; */
+    margin: 0;
+}
+
+#desc {
+    padding: 0 200px;
+
+}
+
+#reqs {
+    display: flex;
+    background-color: var(--yellow);
+    /* width: 100%; */
+    height: 90%;
+}
+
+#reqs h2{
+    text-align: center;
+}
+
+#time {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+#time > h4 {
+    padding: 0 10px;
+}
+
+#time span {
+    color: var(--blue);
+}
+
+#q {
+    text-align: center;
+    background-color: var(--yellow);
+    padding: 10px 0;
+    margin: 0;
+}
+
+
+#can-you, #pics {
+    flex: 1;
+}
+
+
+#can-you-and-pictures {
+    display: flex;
+    flex-direction: row;
+    margin-top: 40px;
+    height: fit-content;
+    align-items: stretch;
+}
+
+#pics {
+    overflow: hidden;
+    padding: 0.8% 0.5%;
+    background-color: var(--yellow);
+}
+
+#pics img {
+    width: 99%;
+    height: 99%;
+}
+
+.number {
+    color: var(--blue);
+    font-family: DegheestBold;
+    margin-bottom: 12px;
+    font-size: 1.5em;
+}
+
+.instr-line {
+    display: flex;
+    flex-direction: column;
+    font-size: 1.25em;
+}
+
+.instr-line img {
+    width: 20em;
+    padding: 5px;
+}
+
+#instructions {
+    padding: 0 100px;
+    padding-bottom: 50px;
+}
+
+#instructions h1 {
+    font-size:4em;
+}
+
+a {
+    color: black;
+}
+
+@media(max-width: 480px) {
+    h1 {
+        font-size: 3em;
+        width: 100%;
+        text-align: center;
+        margin: 0;
+        margin-top: 30px;
+    }
+
+    #top {
+        display: flex;
+        flex-direction: column;
+        /* width: 100vw; */
+        text-align: center;
+    }
+
+    #info {
+        width: 100%;
+        text-align: center;
+        height: fit-content;
+    }
+
+    #time > h4 {
+        display: flex;
+        flex-direction: column;
+        margin-left: 20px;
+    }
+
+    #desc {
+        padding: 0 20px;
+    }
+
+    #reqs {
+        display: flex;
+        flex-direction: column;
+    } 
+
+    #can-you-and-pictures {
+        display: flex;
+        flex-direction: column;
+    } 
+    #pics img {
+        width: 99%;
+        height: auto;
+    }
+
+    #instructions h1 {
+        font-size: 2em;
+        text-align: left;
+        margin-left:5px;
+    }
+
+    #instructions {
+        padding: 0 20px;
+        padding-bottom: 50px;
+    }
+    .instr-line img {
+        width: 75%;
+        margin: 5% 12.5%;
+        padding: 5px;
+    }
+    #recipe-srcs, #non-recipe-srcs {
+        padding: 0 10px;
+    }
+}
+
+* {
+    overflow-x: hidden;
+    line-height: 1.5;
+}
