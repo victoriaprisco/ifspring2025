@@ -1,0 +1,353 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+		<title>Buttons &mdash; Vicky Prisco</title>
+
+		<link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300,300italic,400italic,600,600italic,700,700italic,800,800italic' rel='stylesheet' type='text/css'>
+		<link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet' type='text/css'>
+		<link href='https://fonts.googleapis.com/css?family=Ubuntu:700' rel='stylesheet' type='text/css'>
+
+		<link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+		
+		<style>
+
+			body {
+				color: #333;
+				font-family: 'Open Sans', sans-serif;
+				margin: 0;
+				padding: 0;
+			}
+
+			main {
+				margin: 40px;
+			}
+
+			h1 {
+			 	font-size: 30px;
+			 	margin-bottom: 40px;
+			}
+
+			.button_container {
+				border: 1px solid #ddd;
+				margin: 0 10px 10px 0;
+				padding: 20px;
+				width: 300px;
+				height: 300px;
+				float: left;
+				overflow: hidden;
+				box-sizing: border-box;
+				text-align: center;
+			}
+
+
+
+			a#btn_spotify {
+				display: inline-block;
+				height: 50px;
+				box-sizing: border-box;
+				border-radius: 25px;
+				margin: auto;
+				margin-top: 100px;
+				padding: 10px 40px 0 40px;
+				background-color: #2ebd59;
+				border: 2px solid #2ebd59;
+				color: #fff;
+				font-size: 20px;
+				font-family: 'Montserrat', sans-serif;
+				font-weight: bold;
+				text-decoration: none;
+				transition: all .5s;
+			}
+
+			a#btn_spotify:hover {
+				background-color: #fff;
+				border: 2px solid #000;
+				color: #000;
+			}
+
+			a#btn_amazon {
+				display: block;
+				width: 100px;
+				height: 100px;
+				box-sizing: border-box;
+				border-radius: 50px;
+				margin: auto;
+				margin-top: 75px;
+				padding-top: 8px;
+				background-color: #232f3e;
+				color: #fff;
+				text-align: center;
+				font-size: 60px;
+				transition: all .2s;
+			}
+
+			a#btn_amazon:hover {
+				background-color: #fc9a18;
+			}
+
+			a#btn_twitter {
+				display: inline-block;
+				height: 40px;
+				box-sizing: border-box;
+				border-radius: 4px;
+				margin: auto;
+				margin-top: 105px;
+				padding: 10px 30px 0 30px;
+				background-color: #56cdf1;
+				color: #fff;
+				font-size: 18px;
+				font-family: 'Arial', sans-serif;
+				font-weight: bold;
+				text-decoration: none;
+			}
+
+			a#btn_twitter:hover {
+
+				/* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#2ebfec+0,28a5cb+100 */
+				background: rgb(46,191,236); /* Old browsers */
+				background: -moz-linear-gradient(-45deg,  rgba(46,191,236,1) 0%, rgba(40,165,203,1) 100%); /* FF3.6-15 */
+				background: -webkit-linear-gradient(-45deg,  rgba(46,191,236,1) 0%,rgba(40,165,203,1) 100%); /* Chrome10-25,Safari5.1-6 */
+				background: linear-gradient(135deg,  rgba(46,191,236,1) 0%,rgba(40,165,203,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+				filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#2ebfec', endColorstr='#28a5cb',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+
+			}
+
+			a#btn_indiegogo {
+				display: inline-block;
+				position: relative;
+				margin:auto;
+				margin-top: 100px;
+				padding: 8px 16px;
+				background-color: #fff;
+				color: #eb1478;
+				font-family: 'Ubuntu', sans-serif;
+				font-size: 30px;
+				font-weight: bold;
+				text-transform: uppercase;
+				text-decoration: none;
+				letter-spacing: -2px;
+				transition: all .2s;
+			}
+
+			a#btn_indiegogo:before {
+				content: "";
+				display: block;
+				width: 0;
+				height: 0;
+				z-index: 1;
+				position: absolute;
+				top: 50%;
+				left: 50%;
+				background-color: #eb1478;
+				transition: all .5s;
+			}
+
+			a#btn_indiegogo:hover {
+				color: #fff;
+			}
+
+			a#btn_indiegogo:hover:before {
+				width: 100%;
+				height: 100%;
+				left: 0;
+				top: 0;
+			}
+
+			a#btn_indiegogo span {
+				position: relative;
+				z-index: 10;
+			}
+
+            #coke-img {
+                width: 100%;
+                position: relative; 
+
+                bottom:200%;
+                z-index: 999;
+            }
+
+            .button_container a#btn_coke {
+                height: 100%;
+                display:block;
+            }
+            #coke-ctr:hover{
+                background-color: brown;
+            }
+
+            #coke-img:hover {
+                content: url("coca-cola-logo-white.svg");
+            }
+            .button_container a#btn_coke span {
+                display:block;
+                width:200%;
+                height:200%;
+            }
+            .button_container a#btn_coke:hover span{
+                animation: spin 2s linear infinite;
+                position: relative;
+                top:-50%;
+                left:-50%;
+                box-sizing: border-box;
+                background-color: white;
+                border-radius: 40%;
+                /* animation: spin 6s linear infinite; */
+            }
+
+            @keyframes spin {
+                /* citation: https://codepen.io/Milleus/pen/poJQPOO */
+                0% {
+                    transform: translateY(0) rotate(0deg);
+                }
+                100% {
+                    transform: translateY(-100%) rotate(360deg);
+                }
+            }
+
+            a#btn_lyft img {
+                width: 100%;
+                /* content: url("lyft-logo-filled.svg"); */
+                transition: all .5s;
+            }
+            a#btn_lyft:hover img {
+                width: 100%;
+                content: url("lyft-logo-filled.svg");
+
+                /* -webkit-box-shadow: 0px 0px 15px 5px #FF13C0; 
+                box-shadow: 15px 5px #FF13C0; */
+                filter: drop-shadow( 0px 0px 15px #FF13C0);
+                transition: all .5s;
+
+            }
+
+			a#btn_npr {
+				display: inline-block;
+				height: 40px;
+				box-sizing: border-box;
+				border-radius: 4px;
+				margin: auto;
+				margin-top: 105px;
+				padding: 10px 30px 0 30px;
+                border-style: solid;
+                color: #d61b1d;
+				font-size: 18px;
+				font-family: 'Arial', sans-serif;
+				font-weight: bold;
+				text-decoration: none;
+			}
+
+            #n {
+                color: #d61b1d;
+            }
+            #p {
+                color: black;
+            }
+            #r {
+                color: #1e7dbf;
+            }
+
+            a#btn_npr:hover {
+                background-color: black;
+            }
+
+            a#btn_npr:hover #p {
+                color: white;
+            }
+
+            a#btn_apple img {
+                width: 25%;
+            }
+
+            a#btn_apple:hover img {
+                content: url("apple_filled_logo.webp");
+                width: 21%;
+            }
+
+            a#btn_apple div {
+                border-style: solid;
+                width: fit-content;
+                height: fit-content;    
+                color: black;
+                display:flex;
+                flex-direction: row;
+                align-content: center;
+                justify-content: center;
+                align-items: center;
+                padding: 40px 20px;
+                border-radius: 10px;
+            }
+
+            a#btn_apple:hover div {
+                background-color: gray;
+                color: white;
+            }
+            a#btn_apple div p{
+                padding-left: 40px;
+                font-size:20px;
+            }
+
+            a {
+                text-decoration: none;
+            }
+
+            #btn_fb {
+                background-color :blue;
+                color:white;
+                padding: 10px;
+                border-radius: 5px;
+            }
+
+            #btn_fb:hover {
+                background-color:white;
+                border-color: blue;
+                border-style:solid;
+                color: blue;
+            }
+		</style>
+	</head>
+	<body>
+		
+		<main>
+
+			<h1>Button Styling &mdash; Vicky Prisco</h1>
+			
+			<div class="button_container">
+				<a href="http://www.spotify.com" target="_blank" id="btn_spotify">Spotify</a>
+			</div>
+
+			<div class="button_container">
+				<a href="http://www.amazon.com" target="_blank" id="btn_amazon"><i class="fa fa-amazon"></i></a>
+			</div>
+
+			<div class="button_container">
+				<a href="http://www.twitter.com" target="_blank" id="btn_twitter">twitter</a>
+			</div>
+
+			<div class="button_container">
+				<a href="http://www.indiegogo.com" target="_blank" id="btn_indiegogo"><span>indiegogo</span></a>
+			</div>
+
+			<div class="button_container" id="coke-ctr">
+				<a href="http://www.coca-cola.com/" target="_blank" id="btn_coke"><span></span><img id="coke-img" src="coca-cola-logo.svg" /></a>
+			</div>
+
+			<div class="button_container">
+				<a href="https://www.lyft.com/" target="_blank" id="btn_lyft"><span><img src="lyft-logo.svg"></span></a>
+			</div>
+			<div class="button_container">
+				<a href="http://www.npr.org/" target="_blank" id="btn_npr"><div><span id="n">n</span><span id="p">p</span><span id="r">r</span></div></a>
+			</div>
+			<div class="button_container">
+				<a href="http://www.apple.com/" target="_blank" id="btn_apple"><div><img src="apple-logo.svg"><p>Apple</p>  </div></a>
+			</div>
+			<div class="button_container">
+				<a href="https://www.facebook.com/" target="_blank" id="btn_fb"><span>facebook</span></a>
+			</div>
+            
+		</main>	
+
+	</body>
+</html>
