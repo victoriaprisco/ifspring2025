@@ -1,0 +1,100 @@
+@import url('https://fonts.googleapis.com/css2?family=Alegreya:ital,wght@0,400..900;1,400..900&display=swap');
+
+#hamburger-menu {
+
+    display: flex;
+    flex-direction: column;
+}
+#menu {
+    visibility: hidden;
+    height: 0px;
+}
+#main-header {
+    display: flex;
+}
+
+html {
+    background-image: url("media/bg.png");
+    background-size: cover;
+    font-family: "Alegreya", serif;
+}
+
+html::before {
+    opacity: 0.5;
+}
+
+p { 
+    font-size: 1.5vw;
+    margin: 0 10vw;
+    padding: 30px 0;
+}
+
+img {
+    /* padding: 0 30%; */
+}
+
+#main-header {
+    width: 100%;
+}
+
+#title {
+    padding-top:0;
+    margin:0;
+    width: 100%;
+    text-align: center;
+    font-size: 8vw;
+}
+
+#img-ctr {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+#show-hamburger-menu {
+    padding-left: 15px;
+    padding-top: 15px;
+}
+
+#show-hamburger-menu:hover {
+    cursor:pointer;
+}
+
+#footer {
+    height: 10vw;
+    background-color: #443715;
+    color: white;
+    width: 100%;
+    padding-left:2vw;
+    padding-top:4vw;
+    bottom: 0;
+    font-size: 1.5vw;
+}
+p  #footer {
+    
+    vertical-align: middle;
+}
+a {
+    color: white;
+}
+
+html, body {
+    width: 100%; // https://stackoverflow.com/questions/7424717/div-doesnt-extend-all-the-way-to-end-of-page-when-100-width-specified
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+h2 {
+    margin: 0 100px;
+    font-size: 2vw;
+}
+
+#subtitle {
+    font-size: 3vw;
+    width: 100%;
+    background-color: #443715;
+    color: white;
+    padding: 0 30px;
+    text-align: middle;
+}
